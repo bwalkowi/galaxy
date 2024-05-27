@@ -116,6 +116,14 @@ LOGGING_CONFIG_DEFAULT: Dict[str, Any] = {
             "level": "INFO",
             "qualname": "watchdog.observers.inotify_buffer",
         },
+        "onedatafilerestclient.provider_selector": {
+            "level": "INFO",
+            "qualname": "onedatafilerestclient.provider_selector",
+        },
+        "onedatafilerestclient.http_client": {
+            "level": "INFO",
+            "qualname": "onedatafilerestclient.http_client",
+        },
     },
     "filters": {
         "stack": {
@@ -137,6 +145,7 @@ LOGGING_CONFIG_DEFAULT: Dict[str, Any] = {
         },
     },
 }
+# TODO ??
 """Default value for logging configuration, passed to :func:`logging.config.dictConfig`"""
 
 DEPENDENT_CONFIG_DEFAULTS: Dict[str, str] = {
